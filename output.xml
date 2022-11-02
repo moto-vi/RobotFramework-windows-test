@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.2 on win32)" generated="20221028 15:22:19.143" rpa="false" schemaversion="3">
+<suite id="s1" name="CaseSuite1" source="E:\RotTest\RotTest\CaseType1\CaseSuite1.robot">
+<test id="s1-t1" name="Case1" line="8">
+<kw name="Get Time" library="BuiltIn">
+<var>${time}</var>
+<doc>Returns the given time in the requested format.</doc>
+<msg timestamp="20221028 15:22:19.555" level="INFO">${time} = 2022-10-28 15:22:19</msg>
+<status status="PASS" starttime="20221028 15:22:19.555" endtime="20221028 15:22:19.555"/>
+</kw>
+<kw name="Set Local Variable" library="BuiltIn">
+<arg>${text1}</arg>
+<arg>YoudaoDict</arg>
+<doc>Makes a variable available everywhere within the local scope.</doc>
+<msg timestamp="20221028 15:22:19.556" level="INFO">${text1} = YoudaoDict</msg>
+<status status="PASS" starttime="20221028 15:22:19.556" endtime="20221028 15:22:19.556"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>[${time}] ${text1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221028 15:22:19.557" level="INFO">[2022-10-28 15:22:19] YoudaoDict</msg>
+<status status="PASS" starttime="20221028 15:22:19.557" endtime="20221028 15:22:19.557"/>
+</kw>
+<kw name="Start Test" library="test">
+<var>${result}</var>
+<arg>${text1}</arg>
+<msg timestamp="20221028 15:22:19.892" level="INFO">${result} = Test [YoudaoDict] is passed</msg>
+<status status="PASS" starttime="20221028 15:22:19.557" endtime="20221028 15:22:19.893"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221028 15:22:19.893" level="INFO">Test [YoudaoDict] is passed</msg>
+<status status="PASS" starttime="20221028 15:22:19.893" endtime="20221028 15:22:19.893"/>
+</kw>
+<kw name="Set Reference Folder" library="ImageHorizonLibrary">
+<arg>E:\RotTest\</arg>
+<doc>Sets where all reference images are stored.</doc>
+<status status="PASS" starttime="20221028 15:22:19.894" endtime="20221028 15:22:19.894"/>
+</kw>
+<kw name="Set Screenshot Folder" library="ImageHorizonLibrary">
+<arg>E:\RotTest\</arg>
+<doc>Sets the folder where screenshots are saved to.</doc>
+<status status="PASS" starttime="20221028 15:22:19.894" endtime="20221028 15:22:19.894"/>
+</kw>
+<kw name="Locate" library="ImageHorizonLibrary">
+<var>${point}</var>
+<arg>close.png</arg>
+<doc>Locate image on screen.</doc>
+<msg timestamp="20221028 15:22:19.896" level="FAIL">InvalidImageException: Image path not found: "E:\RotTest\RotTest\close.png".</msg>
+<status status="FAIL" starttime="20221028 15:22:19.895" endtime="20221028 15:22:19.896"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${point}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221028 15:22:19.897" endtime="20221028 15:22:19.897"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221028 15:22:19.898" endtime="20221028 15:22:19.898"/>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" starttime="20221028 15:22:19.898" endtime="20221028 15:22:19.898"/>
+</kw>
+<kw name="Click To The Above Of" library="ImageHorizonLibrary">
+<arg>${point}</arg>
+<arg>50</arg>
+<doc>Clicks above of given location by given offset.</doc>
+<status status="NOT RUN" starttime="20221028 15:22:19.898" endtime="20221028 15:22:19.898"/>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" starttime="20221028 15:22:19.899" endtime="20221028 15:22:19.899"/>
+</kw>
+<status status="FAIL" starttime="20221028 15:22:19.554" endtime="20221028 15:22:19.899">InvalidImageException: Image path not found: "E:\RotTest\RotTest\close.png".</status>
+</test>
+<status status="FAIL" starttime="20221028 15:22:19.145" endtime="20221028 15:22:19.901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="CaseSuite1">CaseSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
